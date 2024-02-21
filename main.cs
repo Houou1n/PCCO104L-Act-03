@@ -2,8 +2,6 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    Console.WriteLine ("Hello World");
-
     string Wrd;
     string PrevWrd = "";
     do
@@ -16,7 +14,7 @@ class Program {
       PrevWrd = PrevWrd + " " + Wrd;
       Console.WriteLine(PrevWrd.Trim());
       } 
-        while (Wrd != "exit" || Wrd != "Exit"")
+      while (Wrd != "exit" && Wrd != "Exit");
     Console.WriteLine(" ");
     Console.WriteLine("You have exited the program");
   }
